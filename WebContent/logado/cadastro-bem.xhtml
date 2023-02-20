@@ -112,11 +112,11 @@
 						    	
 						    	<p:outputLabel>
 						    		<p:outputLabel value="Local de Uso"/>
-						    		<p:inputText style="width: 290px; text-transform: uppercase" value="#{bemBean.bemEdicao.localUso}" required="true" requiredMessage="Local de uso obrigatório"/>
+						    		<p:inputText style="width: 290px; text-transform: uppercase" value="#{bemBean.bemEdicao.localUso}"/>
 						    	</p:outputLabel>							
 							</h:panelGrid>
 							
-							<h:panelGrid columns="3">
+							<h:panelGrid columns="1">
 								<p:outputLabel>
 									<p:outputLabel value="Situação"/><br></br>
 									<p:selectOneMenu value="#{bemBean.bemEdicao.situacao}" required="true" requiredMessage="Situação do bem obrigatória">
@@ -124,17 +124,7 @@
 										<f:selectItem itemLabel="ATIVO" itemValue="ATIVO"/>
                     					<f:selectItem itemLabel="INATIVO" itemValue="INATIVO"/>
 									</p:selectOneMenu>
-								</p:outputLabel>
-								
-								<p:outputLabel>
-							 		<p:outputLabel  value="Data de Descarte"/><br></br>
-							 		<p:calendar value="#{bemBean.bemEdicao.dataDescarte}" pattern="dd-MM-yyyy" mask="true" style="width: 175px"/>
-						    	</p:outputLabel>
-						    	
-						    	<p:outputLabel>
-							 		<p:outputLabel  value="Data de Venda"/><br></br>
-							 		<p:calendar value="#{bemBean.bemEdicao.dataVenda}" pattern="dd-MM-yyyy" mask="true" style="width: 175px"/>
-						    	</p:outputLabel>							
+								</p:outputLabel>															
 							</h:panelGrid>													
 						</p:tab>
 					 </p:tabView>
@@ -159,18 +149,17 @@
 							<h:panelGrid columns="3">
 								<p:outputLabel>
 									<p:outputLabel value="Valor de Bem"/><br></br>
-									<p:inputNumber style="width: 300px; text-transform: uppercase" value="#{bemBean.bemEdicao.valorUnitarioBem}" required="true" requiredMessage="Valor do bem obrigatório"
-												   symbol="R$ " decimalSeparator="," thousandSeparator="."/>																
+									<p:inputNumber style="width: 300px; text-transform: uppercase" value="#{bemBean.bemEdicao.valorUnitarioBem}" symbol="R$ " decimalSeparator="," thousandSeparator="."/>																
 								</p:outputLabel>
 								
 								<p:outputLabel>
 							 		<p:outputLabel  value="Data de Compra"/><br></br>
-							 		<p:calendar value="#{bemBean.bemEdicao.dataCompra}" pattern="dd-MM-yyyy" mask="true" style="width: 175px" required="true" requiredMessage="Data de compra obrigatória"/>
+							 		<p:calendar value="#{bemBean.bemEdicao.dataCompra}" pattern="dd-MM-yyyy" mask="true" style="width: 175px" />
 						    	</p:outputLabel>
 						    	
 						    	<p:outputLabel>
 						    		<p:outputLabel value="Local de Uso"/>
-						    		<p:inputText style="width: 290px; text-transform: uppercase" value="#{bemBean.bemEdicao.localUso}" required="true" requiredMessage="Local de uso obrigatório"/>
+						    		<p:inputText style="width: 290px; text-transform: uppercase" value="#{bemBean.bemEdicao.localUso}" />
 						    	</p:outputLabel>							
 							</h:panelGrid>
 							

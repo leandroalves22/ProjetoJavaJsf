@@ -221,7 +221,7 @@
 						
 					 </p:tabView>					
 					<h:panelGrid columns="1"> 
-						<p:commandButton style="width: 685px" value="Salvar" action="#{notaBean.editar}" update=":formTab:tabela-nota" ajax="false"/>										 										 						
+						<p:commandButton style="width: 685px" value="Salvar" action="#{notaBean.editar}" update=":formTab:tabela-nota" />										 										 						
 					</h:panelGrid>				
 				</p:dialog>
 			</h:form>		
@@ -255,7 +255,7 @@
 						    	</p:outputLabel>							
 							</h:panelGrid>
 							
-							<h:panelGrid columns="3">
+							<h:panelGrid columns="1">
 								<p:outputLabel>
 									<p:outputLabel value="Situação"/><br></br>
 									<p:selectOneMenu value="#{notaBean.bemEdicao.situacao}" required="true" requiredMessage="Situação do produto obrigatória">
@@ -263,17 +263,7 @@
 										<f:selectItem itemLabel="ATIVO" itemValue="ATIVO"/>
                     					<f:selectItem itemLabel="INATIVO" itemValue="INATIVO"/>
 									</p:selectOneMenu>
-								</p:outputLabel>
-								
-								<p:outputLabel>
-							 		<p:outputLabel  value="Data de Descarte"/><br></br>
-							 		<p:calendar value="#{notaBean.bemEdicao.dataDescarte}" pattern="dd-MM-yyyy" mask="true" style="width: 175px"/>
-						    	</p:outputLabel>
-						    	
-						    	<p:outputLabel>
-							 		<p:outputLabel  value="Data de Venda"/><br></br>
-							 		<p:calendar value="#{notaBean.bemEdicao.dataVenda}" pattern="dd-MM-yyyy" mask="true" style="width: 175px"/>
-						    	</p:outputLabel>							
+								</p:outputLabel>														
 							</h:panelGrid>														
 						</p:tab>
 					 </p:tabView>
@@ -373,7 +363,7 @@
 						    	</p:outputLabel>							
 							</h:panelGrid>
 							
-							<h:panelGrid columns="3">
+							<h:panelGrid columns="1">
 								<p:outputLabel>
 									<p:outputLabel value="Situação"/><br></br>
 									<p:selectOneMenu value="#{notaBean.bemEdicao.situacao}" required="true" requiredMessage="Situação do bem obrigatória">
@@ -381,17 +371,7 @@
 										<f:selectItem itemLabel="ATIVO" itemValue="ATIVO"/>
                     					<f:selectItem itemLabel="INATIVO" itemValue="INATIVO"/>
 									</p:selectOneMenu>
-								</p:outputLabel>
-								
-								<p:outputLabel>
-							 		<p:outputLabel  value="Data de Descarte"/><br></br>
-							 		<p:calendar value="#{notaBean.bemEdicao.dataDescarte}" pattern="dd-MM-yyyy" mask="true" style="width: 175px"/>
-						    	</p:outputLabel>
-						    	
-						    	<p:outputLabel>
-							 		<p:outputLabel  value="Data de Venda"/><br></br>
-							 		<p:calendar value="#{notaBean.bemEdicao.dataVenda}" pattern="dd-MM-yyyy" mask="true" style="width: 175px"/>
-						    	</p:outputLabel>							
+								</p:outputLabel>															
 							</h:panelGrid>														
 						</p:tab>
 					 </p:tabView>
